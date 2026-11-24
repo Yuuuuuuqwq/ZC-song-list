@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>子辰歌曲列表</title>
+
+    <link rel="stylesheet" href="styleZC.css">
+</head>
+
+<body>
+
+    <!-- 網站主要內容 -->
+    <main class="container">
+
+        <!-- ① 標題區 -->
+        <header class="site-header">
+            <p class="eyebrow">MY PERSONAL MUSIC COLLECTION</p>
+
+            <h1>子辰的歌單o(>ω< )o</h1>
+
+            <p class="subtitle">SONG LIST</p>
+
+            <div class="title-line"></div>
+        </header>
+
+
+        <!-- ② 歌曲分類區 -->
+        <section class="singer-section">
+
+            <h2 class="section-title">歌曲分類</h2>
+
+            <div class="singer-list">
+
+                <button class="singer-btn active" data-genre="全部">全部</button>
+
+                <button class="singer-btn" data-genre="甜歌">小甜歌</button>
+
+                <button class="singer-btn" data-genre="抒情">抒情Lyric</button>
+
+                <button class="singer-btn" data-genre="流行">流行Pop</button>
+
+                <button class="singer-btn" data-genre="古風">古風Antiquity</button>
+
+                <button class="singer-btn" data-genre="EMO">EMO</button>
+
+            
+
+            </div>
+
+        </section>
+
+
+        <!-- ③ 搜尋區 -->
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="text"
+                    id="song-search"
+                    placeholder="搜尋歌曲名稱或歌手..."
+                >
+
+            </div>
+
+            <button class="random-btn" type="button">
+                <span>🎲</span>
+                隨機選歌
+            </button>
+
+        </section>
+
+
+        <!-- ④ 歌曲列表區 -->
+        
+        <section class="song-section">
+            <h2 class="section-title">歌曲列表</h2>
+
+            <div class="table-wrapper">
+                <table class="song-table">
+                    <thead>
+                        <tr>
+                            <th>歌名</th>
+                            <th>歌手</th>
+                            <th>備註</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="song-list">
+                        <!-- JavaScript 會把歌曲放在這裡 -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

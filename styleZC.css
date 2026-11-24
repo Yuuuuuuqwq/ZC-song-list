@@ -1,0 +1,421 @@
+/* =========================
+   基本設定
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, "Microsoft JhengHei", sans-serif;
+    background: #F5F7F8;
+    color: #3E454B;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   整體容器
+========================= */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 45px 24px;
+}
+
+
+/* =========================
+   標題區
+========================= */
+
+.site-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.eyebrow {
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: #8E9AA3;
+    margin-bottom: 10px;
+}
+
+.site-header h1 {
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    color: #3E454B;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #8A939A;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   標題裝飾線
+========================= */
+
+.title-line {
+    width: 55px;
+    height: 1px;
+    background: #B7C0C6;
+    margin: 18px auto 0;
+}
+
+
+/* =========================
+   Section 標題
+========================= */
+
+.section-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #5F6B73;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   歌曲分類
+========================= */
+
+.singer-section {
+    margin-bottom: 32px;
+}
+
+.singer-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+/* 分類按鈕 */
+
+.singer-btn {
+    border: 1px solid #D6DDE1;
+    background: #FFFFFF;
+    color: #6F7980;
+
+    padding: 9px 18px;
+    border-radius: 20px;
+
+    font-size: 14px;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* 滑鼠移上去 */
+
+.singer-btn:hover {
+    background: #EEF2F4;
+    border-color: #B9C3C9;
+    color: #4F5960;
+    transform: translateY(-1px);
+}
+
+
+/* 選中的分類 */
+
+.singer-btn.active {
+    background: #7F8B93;
+    border-color: #7F8B93;
+    color: #FFFFFF;
+}
+
+
+/* =========================
+   搜尋區
+========================= */
+
+.search-section {
+    margin-bottom: 32px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+
+    background: #FFFFFF;
+    border: 1px solid #DCE2E6;
+
+    border-radius: 12px;
+
+    padding: 0 16px;
+
+    height: 48px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* 搜尋框 */
+
+.search-box:focus-within {
+    border-color: #AAB5BC;
+    box-shadow: 0 0 0 3px rgba(142, 154, 163, 0.12);
+}
+
+
+/* 搜尋 icon */
+
+.search-icon {
+    color: #9AA4AA;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+
+/* Input */
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 14px;
+    color: #3E454B;
+}
+
+.search-box input::placeholder {
+    color: #A3ABB0;
+}
+
+
+/* =========================
+   隨機歌曲按鈕
+========================= */
+
+.random-btn {
+    margin-top: 12px;
+
+    border: 1px solid #D1D9DE;
+    background: #FFFFFF;
+    color: #68737B;
+
+    padding: 9px 18px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.random-btn:hover {
+    background: #EEF2F4;
+    border-color: #B5C0C7;
+    color: #4E585F;
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   歌曲列表
+========================= */
+
+.song-section {
+    margin-top: 10px;
+}
+
+
+/* =========================
+   表格外框
+========================= */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+
+    background: #FFFFFF;
+
+    border: 1px solid #DCE2E6;
+    border-radius: 14px;
+
+    box-shadow:
+        0 4px 18px rgba(80, 90, 98, 0.06);
+}
+
+
+/* =========================
+   歌曲表格
+========================= */
+
+.song-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    min-width: 650px;
+}
+
+
+/* 表頭 */
+
+.song-table thead {
+    background: #EEF2F4;
+}
+
+.song-table th {
+    padding: 15px 18px;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    color: #667178;
+
+    letter-spacing: 1px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #DCE2E6;
+}
+
+
+/* 表格內容 */
+
+.song-table td {
+    padding: 15px 18px;
+
+    font-size: 14px;
+
+    color: #4F585F;
+
+    border-bottom: 1px solid #E8ECEF;
+}
+
+
+/* 最後一列不要底線 */
+
+.song-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* 滑過歌曲 */
+
+.song-table tbody tr {
+    transition:
+        background 0.2s ease;
+}
+
+.song-table tbody tr:hover {
+    background: #F7F9FA;
+}
+
+
+/* =========================
+   歌名
+========================= */
+
+.song-table td:first-child {
+    color: #3E454B;
+    font-weight: 500;
+}
+
+
+/* =========================
+   冠歌欄
+========================= */
+
+.song-table td:nth-child(3) {
+    color: #7A858C;
+}
+
+
+/* =========================
+   備註
+========================= */
+
+.song-table td:nth-child(4) {
+    color: #899298;
+}
+
+
+/* =========================
+   找不到歌曲
+========================= */
+
+.empty-message {
+    text-align: center;
+    color: #9AA3A9;
+    padding: 35px 20px;
+    font-size: 14px;
+}
+
+
+/* =========================
+   手機版
+========================= */
+
+@media (max-width: 700px) {
+
+    .container {
+        padding: 32px 16px;
+    }
+
+    .site-header {
+        margin-bottom: 35px;
+    }
+
+    .site-header h1 {
+        font-size: 32px;
+        letter-spacing: 4px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .section-title {
+        font-size: 16px;
+    }
+
+    .singer-list {
+        gap: 8px;
+    }
+
+    .singer-btn {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+
+    .search-box {
+        height: 45px;
+    }
+
+    .song-table {
+        min-width: 600px;
+    }
+
+    .song-table th,
+    .song-table td {
+        padding: 13px 14px;
+    }
+}
