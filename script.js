@@ -881,13 +881,7 @@ const songs = [
         crown: "",
         note: ""
     },
-    {
-        title: "想当你永远的星辰",
-        singer: "宏兒",
-        genre: ["甜歌", "抒情", "流行"],
-        crown: "",
-        note: ""
-    },
+    
     {
         title: "一个人想着一个人",
         singer: "曾沛慈",
